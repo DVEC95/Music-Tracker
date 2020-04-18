@@ -4,9 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Reading Diary</title>
+  <title>Music Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script></script>
 </head>
 <body>
-  
+
+  <h1>Add new release</h1>
+
+    <form id="new-release">
+      <div class="new-release">
+
+        <div>
+          <label for="artist">Artist:</label>
+          <input type="text" name="artist" id="artist" required/>
+        </div>
+
+        <div>
+          <label for="album">Album:</label>
+          <input type="text" name="album" id="album" required/>
+        </div>
+
+        <div>
+          <label for="format">Format:</label>
+          <select id="format">
+            <option value="Digital">Digital</option>
+            <option value="Vinyl">Vinyl</option>
+            <option value="Cassette">Cassette</option>
+            <option value="CD">CD</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+      </div>
+      <input type="submit" value="Add Release">
+    </form>
+
+
+  <h1>Music Releases</h1>
+    <ul id="music-releases"></ul>
+
 </body>
 </html>
